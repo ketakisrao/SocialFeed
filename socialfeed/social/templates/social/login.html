@@ -1,0 +1,10 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'social/style.css' %}" />
+
+<h1>This is a header</h1>
+<ul>
+{% for ch in ll %}
+<li>{{ch.username}}</li>
+{% endfor %}
+</ul>
